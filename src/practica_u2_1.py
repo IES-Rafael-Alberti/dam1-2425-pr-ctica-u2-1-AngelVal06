@@ -4,6 +4,9 @@ MENSAJE_ERROR = "*ERROR* Entrada inválida"
 
 
 def comprobar_importe(valor: str) -> bool:
+    importe = float(input("Dime el importe: "))
+    importe = round(importe,2)
+    
     """
     Verifica si el importe proporcionado es un número válido.
 
@@ -28,6 +31,7 @@ def comprobar_comando(comando: str) -> bool:
 
 
 def mostrar_mensaje_error():
+    print(MENSAJE_ERROR)
     """
     Muestra el mensaje de error por entrada inválida.
     """
